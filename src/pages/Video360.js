@@ -18,9 +18,7 @@ function Video360() {
 
       <a-scene>
         <a-assets>
-          {/* <canvas id="my-canvas" width="100" height="100"></canvas> */}
           <video id="vid" loop={true} src={`/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} > </video>
-          {/* poster="img/telde_sanjuan_360.jpg" preload="true" */}
         </a-assets>
 
         {/* <a-camera>

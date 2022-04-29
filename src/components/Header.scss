@@ -19,13 +19,11 @@ $headerHeight: 6em;
   align-items: center;
   width: 100vw;
   padding: .5em 0 .5em;
-  // background-color: rgb(195, 214, 47);
 }
 
 .header-logos img {
   max-height: var(--header-height, $headerHeight);
   min-height: var(--header-height, $headerHeight);
-  // margin: 0em .5em 0;
 }
 
 hr {

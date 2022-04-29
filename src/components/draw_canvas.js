@@ -91,27 +91,3 @@ function text(ctx) {
   ctx.fillStyle = "rgba(255, 255, 255, 1)";
   ctx.fillText("Hello World", 50, 70);
 }
-
-// Draw on canvas...
-    // this.ctx.moveTo(0, 0);
-    // this.ctx.lineTo(50, 50);
-
-    // this.ctx.beginPath();
-    // this.ctx.arc(50, 50, 20, 0, 2 * Math.PI);
-
-    // this.ctx.font = "30px Arial";
-    // // this.ctx.fillText("Tía María", 10, 50);
-
-    // this.ctx.strokeText("Tía María", 10, 50);
-
-    // this.ctx.stroke();
-
-    // var grd = this.ctx.createLinearGradient(0, 0, 100, 0);
-    // grd.addColorStop(0, "red");
-    // grd.addColorStop(1, "white");
-
-    // // Fill with gradient
-    // this.ctx.fillStyle = grd;
-    // this.ctx.fillRect(0, 0, 100, 100);
-
-

@@ -19,18 +19,12 @@
   max-width: 60px;
   min-height: 60px;
   max-height: 60px;
-  /* display: inline-block; */
   text-align: center;
   color: #fff;
   font-size: 30px;
   line-height: 55px;
   font-weight: bold;
-  /* opacity: .5; */
 }
-
-/* .route-id:hover {
-  opacity: 1;
-} */
 
 .route-name {
   font-weight: bolder;
