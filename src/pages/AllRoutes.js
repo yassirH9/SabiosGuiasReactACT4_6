@@ -14,11 +14,11 @@ export default function AllRoutes() {
 
   const showRoute = (r, index) => {
     return (
-      <div key={index} className="route-container" onClick={() => selectStop(r.id)}>
-        <div className="route-id" style={{ backgroundColor: r.color }}>{r.id}</div>
-        <div className="route-name-and-description">
-          <div className="route-name">{r.name}</div>
-          <div className="route-description">{r.description}</div>
+      <div key={index} className="all-routes-route-container" onClick={() => selectStop(r.id)}>
+        <div className="all-routes-route-id" style={{ backgroundColor: r.color }}>{r.id}</div>
+        <div className="all-routes-route-name-and-description">
+          <div className="all-routes-route-name">{r.name}</div>
+          <div className="all-routes-route-description">{r.description}</div>
         </div>
       </div>
     );
@@ -28,9 +28,9 @@ export default function AllRoutes() {
     <>
       <ScrollToTop />
       <Header />
-      <div className="my-app-container">
-        <div style={{ width: "50vw" }}>
-          <h1 className="routes-title">Rutas</h1>
+      <div className="all-routes-container">
+        <div>
+          <h1 className="all-routes-title">Rutas</h1>
           {
             infoRoutes.map(showRoute)
           }

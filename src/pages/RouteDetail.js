@@ -12,10 +12,6 @@ export default function RouteDetail() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(infoRoutes[id]);
-  }, [])
-
   const showRoute = (r) => {
     return (
       <div className="route-detail-container">
@@ -36,7 +32,6 @@ export default function RouteDetail() {
   }
 
   const showStop = (stop, index) => {
-    console.log(stop)
     return (
       <div key={index} className="route-detail-stops" onClick={() => showVideo360(parseInt(id) + 1, index + 1)}>
         <span>Parada {stop.idStop}:</span> {stop.name}
@@ -48,12 +43,13 @@ export default function RouteDetail() {
     <>
       <ScrollToTop />
       <Header />
-      <div className="route-detail-my-app-container">
+      <div className="route-detail-outer-container">
         {
           showRoute(infoRoutes[id])
         }
-
-        <StopMap location={infoRoutes[id].stops[0].location} />
+        <div className="route-detail-stop-map">
+          <StopMap location={infoRoutes[id].stops[0].location} />
+        </div>
       </div>
       <Footer />
     </>

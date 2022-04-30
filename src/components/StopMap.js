@@ -18,7 +18,7 @@ export default function StopMap(props) {
   }, []);
 
   return (
-    <div className="leaflet-container">
+    <>
       <MapContainer
         center={props.location}
         zoom="12"
@@ -31,6 +31,6 @@ export default function StopMap(props) {
           <Popup>A pretty CSS3 popup. <br /> Easily customizable.</Popup>
         </Marker>
       </MapContainer>
-    </div>
+    </>
   );
 }

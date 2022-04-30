@@ -1,20 +1,20 @@
-.my-app-container{
+.all-routes-container {
   margin-top: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 0px;
+  /* flex: 1 1 0px; */
 }
 
-.route-container {
+.all-routes-route-container {
   margin-top: 1em;
   display: flex;
   flex-direction: row;
   cursor: pointer;
 }
 
-.route-id {
-  margin: 0 .5em 0 1em !important;
+.all-routes-route-id {
+  margin: 0 .5em 0 1em;
   min-width: 60px;
   max-width: 60px;
   min-height: 60px;
@@ -26,15 +26,15 @@
   font-weight: bold;
 }
 
-.route-name {
+.all-routes-route-name {
   font-weight: bolder;
 }
 
-.route-description {
+.all-routes-route-description {
   margin-right: 1em;
 }
 
-.routes-title {
+.all-routes-title {
   font-weight: bolder;
   text-align: center;
   margin: 1em;
@@ -42,11 +42,17 @@
   background-image: url(../../public/img/background_lines.jpg);
 }
 
-.route-link {
-  text-decoration: none;
+/* Bootstrap 5 grid screen sizes
+Extra small (<576px) 	Small (>=576px) 	Medium (>=768px) 	Large (>=992px) 	Extra Large (>=1200px) 	XXL (>=1400px) */
+
+@media screen and (min-width: 576px) {
+  .all-routes-container > div {
+    width: 75vw;
+  }
 }
 
-.route-link:link, .route-link:visited, .route-link:hover, .route-link:active {
-  color: black;
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .all-routes-container > div {
+    width: 50vw;
+  }
 }
