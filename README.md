@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Starting test project for a collaboration among IES El Rincón, CIFP San Cristóbal and Guías Sabios Intérpretes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created as a starting point to create a VR App based on "Sabios Guías Intérpretes" page.
 
-## Available Scripts
+The resources were created by turism students from CIFP San Cristóbal.
 
-In the project directory, you can run:
+From this starting point ICT Students in IES El Rincón will create the VR App.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You need a working environment with:
+* [Git](https://git-scm.com) - You can install it from https://git-scm.com/downloads.
+* [Node.js](https://nodejs.org) - Install node.js from https://nodejs.org/es/download/. It's advisable to install the LTS version.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## General Installation instructions
 
-### `npm test`
+The best option to start with this project is cloning it in your PC:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/tcrurav/SabiosGuiasReactTestProject.git
+```
 
-### `npm run build`
+Once you have cloned your project install all dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd SabiosGuiasReactTestProject
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Finally to start enjoying this project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd SabiosGuiasReactTestProject
+npm start
+```
 
-### `npm run eject`
+Enjoy!!!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Visual Studio Code](https://code.visualstudio.com/) - The Editor used in this project
+* [React](https://reactjs.org/) - React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+* [Leaflet](https://leafletjs.com/) - an open-source JavaScript library for mobile-friendly interactive maps.
+* [react-leaflet](https://react-leaflet.js.org/) - React-Leaflet uses ⚛️ React's lifecycle methods to call the relevant Leaflet handlers, which has a few consequences.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/. A Complete Guide to Flexbox.
+* https://zellwk.com/blog/how-to-write-mobile-first-css/. How to write mobile first CSS (Media Queries).
+* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2. A very complete template for README.md files.
