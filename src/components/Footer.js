@@ -3,6 +3,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <>
+    
       <footer className="footer">
         <div className="logos">
           <img src="/img/San-Cristobal-CIFP.logo_.png" alt="CIFP San Cristóbal" />

@@ -13,8 +13,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/route-detail/:id" element={<RouteDetail />} />
-        <Route path="/all-routes" element={<AllRoutes />} />
         <Route path="/video-360/:route/:stop" element={<Video360 />} />
+        
+        <Route path="/all-routes" element={<AllRoutes />} />
         <Route path="/" element={<AllRoutes />} />
       </Routes>
     </Router>
