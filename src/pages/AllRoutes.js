@@ -30,8 +30,8 @@ export default function AllRoutes() {
     <>
       <ScrollToTop />
       <Header />
-      <div className="all-routes-container">
       <Slider/>
+      <div className="all-routes-container">
         <div>
           <h1 className="all-routes-title">Rutas</h1>
           {
