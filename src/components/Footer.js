@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="img-colum">
           <img className="d-img" src="/img/San-Cristobal-CIFP.logo_.png" alt="CIFP San Cristóbal" />
           <img className="d-img" src="/img/LogoIESElRincon-transparent.png" alt="IES El Rincón" />
-          <img className="d-img" src="/img/LogoSabiosGuias-Inverso.png" alt="Sabios Guías Intérpretes" />
+          <img className="d-img" src="/img/LogoSabiosGuias.png" alt="Sabios Guías Intérpretes" />
         </div>
         {/* Seccion enlace copy y politica de cookies */}
         <div>

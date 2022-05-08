@@ -7,6 +7,7 @@ import {
 import Video360 from "./pages/Video360";
 import AllRoutes from "./pages/AllRoutes";
 import RouteDetail from "./pages/RouteDetail";
+import Inicio from "./pages/Inicio";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/video-360/:route/:stop" element={<Video360 />} />
         
         <Route path="/all-routes" element={<AllRoutes />} />
-        <Route path="/" element={<AllRoutes />} />
+        <Route path="/inicio" element={<Inicio/>}/>
+        <Route path="/" element={<Inicio />} />
       </Routes>
     </Router>
   );
