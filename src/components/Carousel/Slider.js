@@ -10,17 +10,19 @@ function Slider() {
     //let array para componente este contendra lo que se mostrara en el slider
     let sliderArr = [
     <ImgComp src={'https://www.sabiosguiasinterpretes.com/wp-content/uploads/2019/12/slide19_hola.jpg'}/>, 
-    2,
-    3,
-    4,
-    5]
+    <ImgComp src={'https://www.sabiosguiasinterpretes.com/wp-content/uploads/2021/02/banner.jpg'}/>,
+    <ImgComp src={'https://www.sabiosguiasinterpretes.com/wp-content/uploads/2021/02/promovs2.png'}/>,
+    <ImgComp src={'https://www.sabiosguiasinterpretes.com/wp-content/uploads/2019/12/slide19_lpa.jpg'}/>,
+    <ImgComp src={'https://www.sabiosguiasinterpretes.com/wp-content/uploads/2021/07/banner_trans_ins.png'}/>,]
+
     const [x, setX] = useState(0);
     const goLeft = () => {
-        setX(x + 100)
+        x === 0 ? setX(-100 * (sliderArr.length -1)) : setX(x+100);
+        //setX(x + 100)
     };
     const goRight = () => {
         x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100);
-        setX(x - 100)
+        //setX(x - 100)
     };
     return (
         <div className="slider">

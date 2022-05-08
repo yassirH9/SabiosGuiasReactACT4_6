@@ -1,10 +1,11 @@
 .slider {
-    border: 1px solid;
+    //border: 1px solid;
     position: relative;
     width: 100%;
     height: 80vh;
     box-sizing: border-box;
     margin: 0;
+    margin-top: 7em;
     padding: 0;
     display: flex;
     align-items: center;
@@ -13,10 +14,10 @@
 }
 
 .slide {
-    border: 1px solid;
+    //border: 1px solid;
     min-width: 100%;
     height: 80vh;
-    transition: 0.5;
+    transition: 0.5s;
     overflow: hidden;
 }
 //button style
@@ -54,4 +55,38 @@
 .slideimg{
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width: 780px) {
+    .slider {
+        //border: 1px solid;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: -3em;
+        margin-bottom: -10em;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: white;
+    }
+    .slide {
+        //border: 1px solid;
+        min-width: 100%;
+        height: 50vh;
+        transition: 0.5;
+        overflow: hidden;
+    }
+    .img-left{
+        left: 0;
+        width: 5vh;
+        height: auto;
+    }
+    .img-right{
+        right: 0;
+        width: 5vh;
+        height: auto;
+    }
 }
