@@ -4,6 +4,8 @@ import "./AllRoutes.css";
 import ScrollToTop from "../components/ScrollToTop";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
+import Slider from "../components/Carousel/Slider";
+
 
 export default function AllRoutes() {
   const navigate = useNavigate();
@@ -28,6 +30,7 @@ export default function AllRoutes() {
     <>
       <ScrollToTop />
       <Header />
+      <Slider/>
       <div className="all-routes-container">
         <div>
           <h1 className="all-routes-title">Rutas</h1>

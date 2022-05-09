@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import "./Header.scss";
 import variables from "./Header.scss";
 
+import icon_nav from '../SVG/menu.png';
+import logo from '../SVG/LogoSabiosGuias-Inverso.png';
 export default function Header() {
 
   useEffect(() => {
@@ -15,14 +17,20 @@ export default function Header() {
 
   return (
     <>
-      <header className="header">
-        <div className="header-logos">
-          <img src="/img/San-Cristobal-CIFP.logo_.png" alt="CIFP San Cristóbal" />
-          <img src="/img/LogoIESElRincon-transparent.png" alt="IES El Rincón" />
-          <img src="/img/LogoSabiosGuias-Inverso.png" alt="Sabios Guías Intérpretes" />
-        </div>
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <img className='nav-icon' src={icon_nav} />
+          </label>
+          <img className='logo' src={logo} alt="logo sg"/>
+          <ul>
+            <li><a href="http://localhost:3000/">Inicio</a></li>
+            <li><a href="http://localhost:3000/all-routes">Rutas</a></li>
+            <li><a href="https://www.sabiosguiasinterpretes.com/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
       </header>
-      <hr />
     </>
   );
 }
