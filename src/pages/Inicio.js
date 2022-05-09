@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import Slider from "../components/Carousel/Slider";
 
-
+import Tarjeta from '../components/TarjetasDeRuta/Tarjeta';
 export default function AllRoutes() {
     const navigate = useNavigate();
 
@@ -25,7 +25,50 @@ export default function AllRoutes() {
             </div>
         );
     }
-
+    const CARDS = [
+        {
+            src: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1044773304-1-1620987041.jpg?crop=0.667xw:1.00xh;0.133xw,0&resize=640:*',
+            alt: 'aguimes',
+            title: 'Ruta Agüimes',
+            txt: 'Ruta por el casco histórico de Agüimes realizando las 5 paradas...',
+            link: 'http://localhost:3000/route-detail/0',
+        },
+        {
+            src: 'https://static1.elcorreo.com/www/pre2017/multimedia/noticias/201606/30/media/cortadas/risco-kOKG-U2011865623975yE-575x380@El%20Correo.jpg',
+            alt: 'Las palmas de gc',
+            title: 'Ruta Las Palmas GC',
+            txt: 'Ruta por Las Palmas de GC teniendo en cuenta los siguientes puntos de interés...',
+            link: 'http://localhost:3000/route-detail/1',
+        },
+        {
+            src: 'https://pm1.narvii.com/8183/c8ce7cd5e339e9902696668a7b74a45ac0e10ad2r1-1280-720v2_hq.jpg',
+            alt: 'Tras las huellas británicas',
+            title: 'Tras las huellas británicas',
+            txt: 'Tras las Huellas Británicas es una ruta por Ciudad Jardín (Las Palmas de G.C.) donde se destacan visitan los principales elementos que recuerdan a día de hoy el pasado británico de la ciudad...',
+            link: 'http://localhost:3000/route-detail/2',
+        },
+        {
+            src: 'https://estaticos-cdn.prensaiberica.es/clip/4ba6d4cf-0077-4efc-90b5-4292a98ab226_16-9-aspect-ratio_default_1033836.jpg',
+            alt: 'Domingo J Navarro',
+            title: 'Inmersión Lingüística',
+            txt: 'Ruta de inmersión lingüística Canaria, en la que a través de personajes relevantes de nuestra literatura...',
+            link: 'http://localhost:3000/route-detail/3',
+        },
+        {
+            src: 'https://static2.canarias7.es/www/multimedia/202006/09/media/cortadas/jardin_6562163_20200609174532--624x351.jpg',
+            alt: 'Jardín Canario',
+            title: 'Jardín Canario',
+            txt: 'Ruta por el Jardín Canario realizando las 3 paradas que constituyen nuestra visita...',
+            link: 'http://localhost:3000/route-detail/4',
+        },
+        {
+            src: 'http://www.gevic.net/multimedia/imagenes/Gran_Canaria/mundo_rural/actualidad/El-Hierro.-Foto-Yuri-Millar.jpg',
+            alt: 'Aguimes transhumante',
+            title: 'Transhumancia',
+            txt: 'Ruta por el casco histórico de Agüimes realizando las 5 paradas que constituyen nuestra visita...',
+            link: 'http://localhost:3000/route-detail/5',
+        },
+    ]
     return (
         <>
             <ScrollToTop />
@@ -53,6 +96,17 @@ export default function AllRoutes() {
             </div>
             <div className="vid-display">
                 <iframe className="responsive-iframe" src="https://www.youtube.com/embed/Ztg7kqNP8DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div className="container-tarjeta">
+                {
+                    CARDS.map((item, index) => {
+                        return (
+                            <>
+                                <Tarjeta key={index} src={item.src} alt={item.alt} title={item.title} link={item.link} txt={item.txt} />
+                            </>
+                        );
+                    })
+                }
             </div>
             <Footer />
         </>

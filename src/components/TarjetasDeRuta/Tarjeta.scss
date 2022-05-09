@@ -1,0 +1,34 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25em;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .button{
+      padding: .2em .5em;
+      border-radius: 5px;
+      border-color: rgba(136, 138, 117, 0.5);;
+      background: rgb(158, 173, 38);;
+      text-decoration: none;
+      margin-bottom: .5em;
+  }
+  /*@media screen and (max-width: 540px) {
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 10em;
+        border-radius: 1em;
+      }
+  }
+  */
