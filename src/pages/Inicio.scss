@@ -1,0 +1,74 @@
+.dsgi {
+    height: 70%;
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    margin: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+b {
+    color: #447c7c;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.img-container {
+    width: 20em;
+    height: 15em;
+    display: block;
+    margin: auto;
+}
+
+.vid-display {
+    margin-top: 5em;
+    background: black;
+    height: 50em;
+    width: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+.responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+  }
+@media screen and (max-width: 960px) {
+    .dsgi {
+        margin-top: 9em;
+        height: 25%;
+        width: 70%;
+        display: block;
+        //margin: auto;
+    }
+
+    .display {
+        display: flexbox;
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .img-container {
+        width: 15em;
+        height: 10em;
+        display: block;
+        margin: auto;
+        margin-top: 3em;
+    }
+}

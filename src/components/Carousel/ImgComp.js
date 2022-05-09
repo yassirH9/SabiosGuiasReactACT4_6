@@ -1,9 +1,9 @@
 import React from "react";
 import './Slider.scss'
-function ImgComp({ src }) {
+function ImgComp({ src, alt }) {
     return (
         <>
-            <img className="slideimg" src={src} alt="Slider img" />
+            <img className="slideimg" src={src} alt={alt} />
         </>
     );
 }

@@ -29,6 +29,7 @@ li{
   color: #000000;
 }
 h4{
+  margin-left: .5em;
   color: #000000;
 }
 span{
@@ -36,6 +37,7 @@ span{
 }
 /*---ICONOS---*/
 .icon{
+  margin-left: 1em;
   width: 2em;
   height: 2em;
 }
