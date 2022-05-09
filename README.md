@@ -1,49 +1,83 @@
-# Starting test project for a collaboration among IES El Rincón, CIFP San Cristóbal and Guías Sabios Intérpretes
+<div id="top"></div>
 
-This project was created as a starting point to create a VR App based on "Sabios Guías Intérpretes" page.
+  <h3 align="center">Sabios Guías Interpretes</h3>
 
-The resources were created by turism students from CIFP San Cristóbal.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Proyect content</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+  </ol>
+</details>
 
-From this starting point ICT Students in IES El Rincón will create the VR App.
 
-## Prerequisites
 
-You need a working environment with:
-* [Git](https://git-scm.com) - You can install it from https://git-scm.com/downloads.
-* [Node.js](https://nodejs.org) - Install node.js from https://nodejs.org/es/download/. It's advisable to install the LTS version.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+Web project made with JavaScript, React HTML and SASS, raised as a practice to make a main page of a web of tourist and cultural routes in the Canary Islands.
 
-## General Installation instructions
+### Built With
 
-The best option to start with this project is cloning it in your PC:
+* [React.js](https://reactjs.org/)
+* [Bootstrap](https://getbootstrap.com)
+* [JavaScript](https://www.javascript.com/)
+* [SASS](https://sass-lang.com/)
 
-```
-git clone https://github.com/tcrurav/SabiosGuiasReactTestProject.git
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Once you have cloned your project install all dependencies.
 
-```
-cd SabiosGuiasReactTestProject
-npm install
-```
 
-Finally to start enjoying this project.
+<!-- GETTING STARTED -->
+## Getting Started
 
-```
-cd SabiosGuiasReactTestProject
-npm start
-```
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-Enjoy!!!
+### Prerequisites
 
-## Built With
+follow the instructions below to use clone the project
+* GIT
+  ```sh
+  git clone https://github.com/yassirH9/SabiosGuiasReactACT4_6
+  ```
 
-* [Visual Studio Code](https://code.visualstudio.com/) - The Editor used in this project
-* [React](https://reactjs.org/) - React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
-* [Leaflet](https://leafletjs.com/) - an open-source JavaScript library for mobile-friendly interactive maps.
-* [react-leaflet](https://react-leaflet.js.org/) - React-Leaflet uses ⚛️ React's lifecycle methods to call the relevant Leaflet handlers, which has a few consequences.
+### Installation
 
-## Acknowledgments
-* https://css-tricks.com/snippets/css/a-guide-to-flexbox/. A Complete Guide to Flexbox.
-* https://zellwk.com/blog/how-to-write-mobile-first-css/. How to write mobile first CSS (Media Queries).
-* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2. A very complete template for README.md files.
+_Follow the instructions below to use this the project._
+
+1. Go to proyect folder
+   ```sh
+   cd SabiosGuiasReactACT4_6
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Open a local web service on 'localhost:3000'
+   ```js
+   npm start
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+This project is intended to be an example of react framework practice.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
