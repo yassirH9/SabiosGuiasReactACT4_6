@@ -6,7 +6,7 @@ export default function Tarjeta(props) {
         <>
             <div class="card" key={props.key}>
                 <img src={props.src} alt={props.alt} />
-                <div class="container">
+                <div class="container" className='cardText'>
                     <h4><b>{props.title}</b></h4>
                     <p>{props.txt}</p>
                     <form action={props.link}>

@@ -12,9 +12,9 @@ export default function Footer() {
         {/* Seccion elnaces destacados */}
         <div>
           <h4>Enlaces destacados</h4>
-          <dl>
+          <dl className="texts">
             <dd>
-              <a href="https://www.youtube.com/channel/UCsXpM6GoxhFjlGDTyEZ4q8A"><img className="icon" src={ytlogo}/><span class="label"> Youtube</span></a>
+              <a href="https://www.youtube.com/channel/UCsXpM6GoxhFjlGDTyEZ4q8A"><img className="icon" src={ytlogo}/><span class="label">Youtube</span></a>
             </dd>
             <dd>
               <a href="https://www.facebook.com/fundacionlidiagarcia/posts/sabios-gu%C3%ADas-interpretes-en-agaete-hoy-el-equipo-t%C3%A9cnico-del-proyecto-sabios-gu%C3%AD/877161022843884/"><img className="icon" src={ftlogo}/><span class="label">Facebook</span></a>
@@ -37,7 +37,7 @@ export default function Footer() {
           <img className="d-img" src="/img/LogoSabiosGuias.png" alt="Sabios Guías Intérpretes" />
         </div>
         {/* Seccion enlace copy y politica de cookies */}
-        <div>
+        <div className="texts">
           <ul class="menu">
             <li>Copyright&copy;</li><li><a href="#">Política de Cookies</a></li>
           </ul>

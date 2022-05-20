@@ -24,7 +24,7 @@ export default function Header() {
             <img className='nav-icon' src={icon_nav} />
           </label>
           <img className='logo' src={logo} alt="logo sg"/>
-          <ul>
+          <ul className='texts'>
             <li><a href="http://localhost:3000/">Inicio</a></li>
             <li><a href="http://localhost:3000/all-routes">Rutas</a></li>
             <li><a href="https://www.sabiosguiasinterpretes.com/contacto/">Contacto</a></li>
