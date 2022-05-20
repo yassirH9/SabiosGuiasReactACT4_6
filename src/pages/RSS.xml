@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+    <channel>
+        <title>RSS </title>
+        <link></link>
+        <description></description>
+        <item>
+            <title>Qué es el RSS</title>
+            <link>http://es.geocities.com/rss_guia_facil/que_es_rss.html</link>
+            <description>Visita la Guía Fácil del RSS para saber qué es el formato RSS</description>
+        </item>
+    </channel>
+</rss>
