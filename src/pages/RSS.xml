@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <rss version="2.0">
     <channel>
-        <title>RSS </title>
-        <link></link>
+        <title>Sabios Guías Intérpretes</title>
+        <link>localhost</link>
         <description></description>
         <item>
             <title>Qué es el RSS</title>
