@@ -8,6 +8,8 @@ import Video360 from "./pages/Video360";
 import AllRoutes from "./pages/AllRoutes";
 import RouteDetail from "./pages/RouteDetail";
 import Inicio from "./pages/Inicio";
+import VR_Lobby from "./pages/VR_Lobby";
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/all-routes" element={<AllRoutes />} />
         <Route path="/inicio" element={<Inicio/>}/>
         <Route path="/" element={<Inicio />} />
+
+        <Route path="/VR" element={<VR_Lobby />} />
       </Routes>
     </Router>
   );
