@@ -3,7 +3,7 @@ import "./Header.scss";
 import variables from "./Header.scss";
 
 import icon_nav from '../SVG/menu.png';
-import logo from '../SVG/LogoSabiosGuias-Inverso.png';
+import logo from '../SVG/New-Logo.png';
 export default function Header() {
 
   useEffect(() => {
@@ -23,8 +23,8 @@ export default function Header() {
           <label for="check" class="checkbtn">
             <img className='nav-icon' src={icon_nav} />
           </label>
-          <img className='logo' src={logo} alt="logo sg"/>
-          <ul>
+          <a href='http://localhost:3000/' className='logo'> <img src={logo} alt="logo sg"></img> </a>
+          <ul className='texts'>
             <li><a href="http://localhost:3000/">Inicio</a></li>
             <li><a href="http://localhost:3000/all-routes">Rutas</a></li>
             <li><a href="https://www.sabiosguiasinterpretes.com/contacto/">Contacto</a></li>
