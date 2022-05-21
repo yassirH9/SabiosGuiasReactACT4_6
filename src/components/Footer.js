@@ -10,9 +10,9 @@ export default function Footer() {
     <>
       <footer id="footer">
         {/* Seccion elnaces destacados */}
-        <div>
+        <div className="texts">
           <h4>Enlaces destacados</h4>
-          <dl className="texts">
+          <dl>
             <dd>
               <a href="https://www.youtube.com/channel/UCsXpM6GoxhFjlGDTyEZ4q8A"><img className="icon" src={ytlogo}/><span class="label">Youtube</span></a>
             </dd>
