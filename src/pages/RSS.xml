@@ -2,12 +2,13 @@
 <rss version="2.0">
     <channel>
         <title>Sabios Guías Intérpretes</title>
-        <link>localhost</link>
-        <description></description>
+        <link>https://www.sabiosguiasinterpretes.com</link>
+        <description>Guía Canaria de Rutas de los Sabios Guías Intérpretes</description>
+        <language>es</language>
         <item>
-            <title>Qué es el RSS</title>
-            <link>http://es.geocities.com/rss_guia_facil/que_es_rss.html</link>
-            <description>Visita la Guía Fácil del RSS para saber qué es el formato RSS</description>
+            <title>El papel de la mujer en la aparcería</title>
+            <link>https://www.sabiosguiasinterpretes.com/el-papel-de-la-mujer-en-la-aparceria</link>
+            <description>El tomate ha sido uno de los grandes productos de exportación en Canarias y, en este contexto y sector, la participación de la isla de Gran Canaria ha sido muy elevada.</description>
         </item>
     </channel>
 </rss>
