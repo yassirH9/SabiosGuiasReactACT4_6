@@ -9,7 +9,8 @@
 }
 
 .card img {
-  border-radius: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .card div {
@@ -28,7 +29,6 @@
 
 .card form {
   text-align: center;
-
 }
 
 .card:hover {
