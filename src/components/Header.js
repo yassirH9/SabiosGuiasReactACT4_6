@@ -3,7 +3,7 @@ import "./Header.scss";
 import variables from "./Header.scss";
 
 import icon_nav from '../SVG/menu.png';
-import logo from '../SVG/LogoSabiosGuias-Inverso.png';
+import logo from '../SVG/New-Logo.png';
 export default function Header() {
 
   useEffect(() => {
