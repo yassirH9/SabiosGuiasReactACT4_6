@@ -15,7 +15,9 @@ function VR_Route() {
                 <a-scene>
                     <a-assets>
                     </a-assets>
+                    
                     <a-sky color="white"></a-sky>
+
                     <a-camera id="my-camera">
                         <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02" position="0 0 -1.8" material="shader:flat;color:#008000" animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
                             raycaster="objects: .clickable">
