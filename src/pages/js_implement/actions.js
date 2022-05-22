@@ -36,3 +36,15 @@ window.AFRAME.registerComponent('home', {
         });
     },
 });
+
+// window.AFRAME.registerComponent('pause', {
+//     init: function () {
+//         this.el.addEventListener("mouseenter", function () {
+//             setTimeout(() => {
+//                 console.log("Punto2");
+//                 const video = document.querySelector("#vid-player");
+//                 video.getAttribute('src').pause();
+//             }, 1200);
+//         });
+//     },
+// });
