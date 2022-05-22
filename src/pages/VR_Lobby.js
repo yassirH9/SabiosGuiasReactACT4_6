@@ -5,6 +5,7 @@ import MenuItem from '../components/MenuItem';
 import { useParams } from 'react-router-dom';
 import { systems } from 'aframe';
 
+
 import './js_implement/actions'
 import './js_implement/Charge_world'
 function VR_Route() {
@@ -15,7 +16,7 @@ function VR_Route() {
                 <a-scene>
                     <a-assets>
                     </a-assets>
-                    
+
                     <a-sky color="white"></a-sky>
 
                     <a-camera id="my-camera">
@@ -24,10 +25,15 @@ function VR_Route() {
                         </a-entity>
                     </a-camera>
 
-                    {/*text area*/}
-                    <a-box class="clickable" click_fade_lobby position="0 0 0" scale="1 1 1" color="black" />
-                    {/*text area*/}
-
+                    {/* Panel de control virtual */}
+                    <a-plane position="2 1 -3" scale="2 1 0" rotation="0 -35 0 ">
+                        <a-plane class="clickable" click_appear_lobby  position="-.40 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1" ></a-plane>
+                        <a-plane class="clickable" click_fade_lobby  position="-.40 -.35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1" ></a-plane>
+                        <a-plane class="clickable" position=".4 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1" ></a-plane>
+                        <a-plane class="clickable" position=".23 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1" ></a-plane>
+                        <a-plane class="clickable" position="0 0 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1" ></a-plane>
+                        
+                    </a-plane>
 
                     <a-entity id="entity-lobby">
                         {/* Lobby component*/}
