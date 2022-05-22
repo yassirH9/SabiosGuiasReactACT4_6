@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "vrbicycles-16b71"
-  }
+    "default": "vrbicycles-16b71",
+    "SGIR": "sabiosguiasreact46"
+  },
+  "targets": {}
 }

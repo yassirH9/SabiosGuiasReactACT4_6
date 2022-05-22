@@ -1,0 +1,44 @@
+[debug] [2022-05-22T22:58:12.775Z] ----------------------------------------------------------------------
+[debug] [2022-05-22T22:58:12.776Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lonel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-22T22:58:12.777Z] CLI Version:   11.0.0
+[debug] [2022-05-22T22:58:12.777Z] Platform:      win32
+[debug] [2022-05-22T22:58:12.777Z] Node Version:  v16.15.0
+[debug] [2022-05-22T22:58:12.777Z] Time:          Sun May 22 2022 23:58:12 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-22T22:58:12.777Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-22T22:58:12.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-22T22:58:12.815Z] > authorizing via signed-in user (kevinrodriguezvalentin@alumno.ieselrincon.es)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lonel\Documents\CodeProjects\LND Projects\CoopProj\SabiosGuiasReactACT4_6
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-22T22:58:16.135Z] Using project from CLI flag: sabiosguiasreact46
+[debug] [2022-05-22T22:58:16.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasreact46 [none]
+[debug] [2022-05-22T22:58:16.493Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasreact46 200
+[debug] [2022-05-22T22:58:16.493Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasreact46 {"projectId":"sabiosguiasreact46","projectNumber":"1077679190527","displayName":"SabiosGuiasReact46","name":"projects/sabiosguiasreact46","resources":{"hostingSite":"sabiosguiasreact46"},"state":"ACTIVE"}
+[info] i  Using project sabiosguiasreact46 (SabiosGuiasReact46) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
