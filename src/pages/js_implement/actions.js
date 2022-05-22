@@ -35,6 +35,7 @@ window.AFRAME.registerComponent('click_appear_lobby', {
         });
     },
 });
+
 window.AFRAME.registerComponent('click_home', {
     init: function () {
         this.el.addEventListener("mouseenter", function () {
