@@ -36,9 +36,8 @@ function VR_Route() {
                     <a-plane material="opacity:0.4:transparent:true" position="2 1 -3" scale="2 1 0" rotation="0 -35 0 ">
                         <a-plane material="opacity:.9:transparent:true" class="clickable" click_appear_lobby position="-.40 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1" />
                         <a-plane material="opacity:.9:transparent:true" class="clickable" click_home position=".40 -.35 -500" scale=".12 .24 .1" rotation="0 0 0" src="/img/LogoSabiosGuiasCompact.png" repeat="1 1 1" />
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_fade_lobby position="-.40 -.35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1" />
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_play position="-.1 0 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/play.svg" repeat="1 1 1" />
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_pause position=".1 0 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/pause.svg" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_play position="-.15 0 -500" scale=".28 .4 .1" rotation="0 0 0" src="/img/play.svg" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_pause position=".15 0 -500" scale=".28 .4 .1" rotation="0 0 0" src="/img/pause.svg" repeat="1 1 1" />
 
                     </a-plane>
 
