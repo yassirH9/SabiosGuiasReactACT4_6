@@ -30,3 +30,19 @@ window.AFRAME.registerComponent('change_world_v', {
 
     }
 });
+window.AFRAME.registerComponent('change_world_v2', {
+    schema: {
+        src: { type: 'string' }
+    },
+    init: function() {
+        var data = this.data;
+        console.log("cambio entorno video 1")
+        this.el.addEventListener("mouseenter", function() {
+            var vidplayer = document.querySelector("#vid-player");
+            vidplayer.setAttribute("src",data.src);
+            document.querySelector(data.src).play();
+            console.log("cambio entorno video 2")
+        });
+
+    }
+});
