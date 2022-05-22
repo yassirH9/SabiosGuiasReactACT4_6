@@ -5,6 +5,7 @@ import MenuItem from '../components/MenuItem';
 import { useParams } from 'react-router-dom';
 import { systems } from 'aframe';
 
+
 import './js_implement/actions'
 import './js_implement/Charge_world'
 const videos = [
@@ -30,11 +31,24 @@ function VR_Route() {
 
                     <a-sky id="my-sky" color="white"></a-sky>
 
+
                     <a-camera id="my-camera">
                         <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02" position="0 0 -1.8" material="shader:flat;color:#008000" animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
                             raycaster="objects: .clickable">
                         </a-entity>
                     </a-camera>
+
+
+                    {/* Panel de control virtual */}
+                    <a-plane material="opacity:0.4:transparent:true" position="2 1 -3" scale="2 1 0" rotation="0 -35 0 ">
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_appear_lobby position="-.40 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1"/>
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_home position=".40 -.35 -500" scale=".12 .24 .1" rotation="0 0 0" src="/img/LogoSabiosGuiasCompact.png" repeat="1 1 1"/>
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_fade_lobby  position="-.40 -.35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1"/>
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".4 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1"/>
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".23 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1"/>
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position="0 0 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1"/>
+                        
+                    </a-plane>
 
                     {/*text area*/}
                     <a-videosphere  id="vid-player" autoPlay loop={new Boolean(true)}></a-videosphere>
