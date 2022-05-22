@@ -46,3 +46,25 @@ window.AFRAME.registerComponent('click_home', {
         });
     },
 });
+
+window.AFRAME.registerComponent('click_play', {
+    init: function () {
+        this.el.addEventListener("mouseenter", function () {
+            setTimeout(() => {
+                var vidplay = document.querySelector("#vid-player").getAttribute("src");
+                document.querySelector(vidplay).play();
+            }, 1200);
+        });
+    },
+});
+
+window.AFRAME.registerComponent('click_pause', {
+    init: function () {
+        this.el.addEventListener("mouseenter", function () {
+            setTimeout(() => {
+                var vidplay = document.querySelector("#vid-player").getAttribute("src");
+                document.querySelector(vidplay).pause();
+            }, 1200);
+        });
+    },
+});
