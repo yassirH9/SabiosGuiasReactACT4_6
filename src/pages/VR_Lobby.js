@@ -26,8 +26,8 @@ function VR_Route() {
                     </a-camera>
 
                     {/*text area*/}
-                    <a-box class="clickable" click_move position="0 0 0" scale="1 1 1" color="black" />
                     <a-videosphere src="#antarctica"></a-videosphere>
+                    <a-box class="clickable" click_fade_lobby position="0 0 0" scale="1 1 1" color="black" />
                     {/*text area*/}
 
 
