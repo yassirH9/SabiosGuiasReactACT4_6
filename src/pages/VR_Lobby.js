@@ -27,11 +27,12 @@ function VR_Route() {
 
                     {/* Panel de control virtual */}
                     <a-plane position="2 1 -3" scale="2 1 0" rotation="0 -35 0 ">
-                        <a-plane class="clickable" click_appear_lobby  position="-.40 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1" ></a-plane>
-                        <a-plane class="clickable" click_fade_lobby  position="-.40 -.35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1" ></a-plane>
-                        <a-plane class="clickable" position=".4 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1" ></a-plane>
-                        <a-plane class="clickable" position=".23 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1" ></a-plane>
-                        <a-plane class="clickable" position="0 0 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1" ></a-plane>
+                        <a-plane class="clickable" click_appear_lobby  position="-.40 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1"/>
+                        <a-plane class="clickable"  position=".40 -.35 30" scale=".12 .24 .1" rotation="0 0 0" src="/img/LogoSabiosGuiasCompact.png" repeat="1 1 1"/>
+                        <a-plane class="clickable" click_fade_lobby  position="-.40 -.35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1"/>
+                        <a-plane class="clickable" position=".4 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1"/>
+                        <a-plane class="clickable" position=".23 .35 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1"/>
+                        <a-plane class="clickable" position="0 0 30" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1"/>
                         
                     </a-plane>
 
