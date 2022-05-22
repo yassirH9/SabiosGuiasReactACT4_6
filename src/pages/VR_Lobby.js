@@ -30,17 +30,17 @@ function VR_Route() {
 
                     {/* Panel de control virtual */}
                     <a-plane material="opacity:0.4:transparent:true" position="2 1 -3" scale="2 1 0" rotation="0 -35 0 ">
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_appear_lobby position="-.40 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1"/>
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_home position=".40 -.35 -500" scale=".12 .24 .1" rotation="0 0 0" src="/img/LogoSabiosGuiasCompact.png" repeat="1 1 1"/>
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_fade_lobby  position="-.40 -.35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1"/>
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".4 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1"/>
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".23 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1"/>
-                        <a-plane material="opacity:.9:transparent:true" class="clickable" position="0 0 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1"/>
-                        
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_appear_lobby position="-.40 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/home-icon.png" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_home position=".40 -.35 -500" scale=".12 .24 .1" rotation="0 0 0" src="/img/LogoSabiosGuiasCompact.png" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" click_fade_lobby position="-.40 -.35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/switch.png" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".4 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-up.svg" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position=".23 .35 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/vol-dn.svg" repeat="1 1 1" />
+                        <a-plane material="opacity:.9:transparent:true" class="clickable" position="0 0 -500" scale=".14 .2 .1" rotation="0 0 0" src="/img/play-pause.svg" repeat="1 1 1" />
+
                     </a-plane>
 
                     {/*text area*/}
-                    <a-videosphere  id="vid-player" autoPlay loop={new Boolean(true)}></a-videosphere>
+                    <a-videosphere pause id="vid-player" autoPlay loop={new Boolean(true)}></a-videosphere>a
 
 
                     <a-entity id="entity-lobby">
@@ -55,17 +55,15 @@ function VR_Route() {
                         {/* Lobby techo*/}
                         <a-plane position="0 10 0" scale="80 31 80" rotation="90 0 90" src="https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_960_720.jpg" repeat="10 10 1"></a-plane>
                         {/* Lobby seccion de ruta 1*/}
-                        <a-plane change_world_v="src:/video/Route-1/Route-1-Stop-1.mp4" class="clickable" position="14.8 3 30" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
-                        <a-text value="Ruta 1 -Parada 1- " color="Black" position="13.2 0 -0.3" width="2 " scale="5 5 0" rotation="0 -90 0" />
 
-                        <a-plane change_world_v="src:/video/Route-1/Route-1-Stop-3.mp4" class="clickable" position="14.8 3 20" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
-                        <a-text value="Ruta 1 -Parada 2-" color="Black" position="13.2 0 9.5" width="2 " scale="5 5 0" rotation="0 -90 0" />
-
-                        <a-plane change_world_v="src:/video/Route-1/Route-1-Stop-5.mp4" class="clickable" position="14.8 3 10" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
-                        <a-text value="Ruta 1 -Parada 3-" color="Black" position="13.2 0 19.5" width="2 " scale="5 5 0" rotation="0 -90 0" />
-
-                        <a-plane change_world_v="src:/video/Route-1/Route-1-Stop-6.mp4" class="clickable" position="14.8 3 0" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
-                        <a-text value="Ruta 1 -Parada 4-" color="Black" position="13.2 0 29.5d" width="2 " scale="5 5 0" rotation="0 -90 0" />
+                        <a-plane click_fade_lobby change_world_v="src:/video/Route-1/Route-1-Stop-6.mp4" class="clickable" position="14.8 3 0" scale="5 5 10" rotation="0 -90 0" repeat="1 1 1" src="/img/r1_s1.png"></a-plane>
+                        <a-text value="Ruta 1 -Parada 1- " color="Black" position="13.2 0 -1.5" width="2 " scale="5 5 0" rotation="0 -90 0"/>
+                        <a-plane click_fade_lobby change_world_v="src:/video/Route-1/Route-1-Stop-3.mp4" class="clickable" position="14.8 3 20" scale="5 5 10" rotation="0 -90 0" repeat="1 1 1" src="/img/r1_s3.png"></a-plane>
+                        <a-text value="Ruta 1 -Parada 2-" color="Black" position="13.2 0 8" width="2 " scale="5 5 0" rotation="0 -90 0" />
+                        <a-plane click_fade_lobby change_world_v="src:/video/Route-1/Route-1-Stop-5.mp4" class="clickable" position="14.8 3 10" scale="5 5 10" rotation="0 -90 0"repeat="1 1 1" src="/img/r1_s2.png"></a-plane>
+                        <a-text value="Ruta 1 -Parada 3-" color="Black" position="13.2 0 18" width="2 " scale="5 5 0" rotation="0 -90 0" />
+                        <a-plane click_fade_lobby change_world_v="src:/video/Route-1/Route-1-Stop-1.mp4" class="clickable" position="14.8 3 30" scale="5 5 10" rotation="0 -90 0" repeat="1 1 1" src="/img/r1_s4.png"></a-plane>
+                        <a-text value="Ruta 1 -Parada 4-" color="Black" position="13.2 0 28" width="2 " scale="5 5 0" rotation="0 -90 0" />
                         <a-box position="14.8 0 0" scale="3 2 80" color="#CECECE" />
                         {/* Lobby seccion de ruta azuaje*/}
                         <a-plane position="-14.8 3 30" scale="5 5 10" rotation="0 90 0" repeat="10 10 1" color="black"></a-plane>
