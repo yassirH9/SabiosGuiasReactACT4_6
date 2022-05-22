@@ -7,6 +7,18 @@ import { systems } from 'aframe';
 
 import './js_implement/actions'
 import './js_implement/Charge_world'
+const videos = [
+    {
+        src1: '/video/Route-1/Route-1-Stop-1.mp4',
+    }, {
+        src2: '/video/Route-1/Route-1-Stop-3.mp4',
+    }, {
+        src3: '/video/Route-1/Route-1-Stop-5.mp4',
+    }, {
+        src4: '/video/Route-1/Route-1-Stop-6.mp4',
+    },
+
+]
 function VR_Route() {
     return (
         <>
@@ -14,10 +26,9 @@ function VR_Route() {
                 <a-scene stats></a-scene>
                 <a-scene>
                     <a-assets>
-                        <video id="antarctica" autoPlay loop={new Boolean(true)} src="/video/Route-1/Route-1-Stop-3.mp4"> </video>
                     </a-assets>
 
-                    <a-sky color="white"></a-sky>
+                    <a-sky id="my-sky" color="white"></a-sky>
 
                     <a-camera id="my-camera">
                         <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02" position="0 0 -1.8" material="shader:flat;color:#008000" animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
@@ -26,8 +37,8 @@ function VR_Route() {
                     </a-camera>
 
                     {/*text area*/}
-                    <a-videosphere src="#antarctica"></a-videosphere>
-                    <a-box class="clickable" click_fade_lobby position="0 0 0" scale="1 1 1" color="black" />
+                    <a-videosphere  id="vid-player" autoPlay loop={new Boolean(true)}></a-videosphere>
+                    <a-box change_world_v="src:/video/Route-1/Route-1-Stop-1.mp4" class="clickable" click_fade_lobby position="0 0 0" scale="1 1 1" color="black" />
                     {/*text area*/}
 
 
@@ -43,14 +54,17 @@ function VR_Route() {
                         {/* Lobby techo*/}
                         <a-plane position="0 10 0" scale="80 31 80" rotation="90 0 90" src="https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_960_720.jpg" repeat="10 10 1"></a-plane>
                         {/* Lobby seccion de ruta 1*/}
-                        <a-plane position="14.8 3 30" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
+                        <a-plane class="clickable" position="14.8 3 30" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
                         <a-text value="Ruta 1" color="Black" position="13.2 0 -0.3" width="2 " scale="5 5 0" rotation="0 -90 0" />
+
                         <a-plane position="14.8 3 20" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
                         <a-text value="Ruta 1" color="Black" position="13.2 0 9.5" width="2 " scale="5 5 0" rotation="0 -90 0" />
+
                         <a-plane position="14.8 3 10" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
                         <a-text value="Ruta 1" color="Black" position="13.2 0 19.5" width="2 " scale="5 5 0" rotation="0 -90 0" />
+
                         <a-plane position="14.8 3 0" scale="5 5 10" rotation="0 -90 0" repeat="10 10 1" color="black"></a-plane>
-                        <a-text value="Ruta 1" color="Black" position="13.2 0 29.5d" width="2 " scale="5 5 0" rotation="0 -90 0" />
+                        <a-text value="este" color="Black" position="13.2 0 29.5d" width="2 " scale="5 5 0" rotation="0 -90 0" />
                         <a-box position="14.8 0 0" scale="3 2 80" color="#CECECE" />
                         {/* Lobby seccion de ruta azuaje*/}
                         <a-plane position="-14.8 3 30" scale="5 5 10" rotation="0 90 0" repeat="10 10 1" color="black"></a-plane>
