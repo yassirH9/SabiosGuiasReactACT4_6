@@ -14,8 +14,9 @@ function VR_Route() {
                 <a-scene stats></a-scene>
                 <a-scene>
                     <a-assets>
+                        <video id="antarctica" autoPlay loop={new Boolean(true)} src="/video/Route-1/Route-1-Stop-3.mp4"> </video>
                     </a-assets>
-                    
+
                     <a-sky color="white"></a-sky>
 
                     <a-camera id="my-camera">
@@ -26,6 +27,7 @@ function VR_Route() {
 
                     {/*text area*/}
                     <a-box class="clickable" click_move position="0 0 0" scale="1 1 1" color="black" />
+                    <a-videosphere src="#antarctica"></a-videosphere>
                     {/*text area*/}
 
 
