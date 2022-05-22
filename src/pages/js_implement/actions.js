@@ -39,7 +39,8 @@ window.AFRAME.registerComponent('click_home', {
     init: function () {
         this.el.addEventListener("mouseenter", function () {
             setTimeout(() => {
-                window.open("localhost:3000", "_self");
+                console.log("Punto2");
+                window.open("/","_self");
             }, 1200);
         });
     },
