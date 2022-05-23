@@ -163,9 +163,11 @@ Albeit the control panel may look a little bit dry or lack of content, it can ma
 Last advice, the buttons are actioned using eventListeners along with mouseenter interactions, that means that the button is activated by just positioning the cursor onto said button.
 The cursor it's in the middle of the screen and makes a distinctive animation each time it touches a button.
 
+
   ```js
   addEventListener("mouseenter", function (){});
   ```
+
 
 This is a quick example of a basic eventListener, where we await for an object with the quality "mouseenter" to collide with the button. In this case, the cursor lines a trace in front of it that has the "mouseenter" quality and triggers every button it collides with.
 
