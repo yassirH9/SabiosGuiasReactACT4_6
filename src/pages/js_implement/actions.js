@@ -21,16 +21,19 @@ window.AFRAME.registerComponent('click_appear_lobby', {
         this.el.addEventListener("mouseenter", function () {
             setTimeout(() => {
                 console.log("pasa por aquí");
+                var vidplay = document.querySelector("#vid-player");
+                var srcc = vidplay.getAttribute("src");
+                document.querySelector(srcc).pause();
                 const myCamera = document.getElementById("my-camera");
                 myCamera.setAttribute("position", "0 2 -1.8");
                 var lobby = document.getElementById("entity-lobby");
                 lobby.setAttribute("visible", "true");
-                for(var i=1; i<=8; i++){
+                for(var i=1; i<=5; i++){
                     var panels = document.getElementById("panel_lobby"+i);
                     panels.setAttribute("rotation","0 -90 0");    
                 }
-                var vidplay = document.querySelector("#vid-player").getAttribute("src");
-                document.querySelector(vidplay).pause();
+                document.getElementById("panel_lobby_azu").setAttribute("rotation","0 90 0");
+                
             }, 1200);
         });
     },
