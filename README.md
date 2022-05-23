@@ -93,7 +93,6 @@ _Follow the instructions below to use this the project._
    ```js
    npm start
    ```
-   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
