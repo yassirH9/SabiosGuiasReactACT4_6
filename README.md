@@ -149,5 +149,24 @@ And it even offers a RSS button in case you don't want to miss anything related 
 
 Probably the section where most people will stay, in the VR page we've got a large lobby in which we have two main walls, one at each side showing a little preview of what we can find if we point directly at them.
 
+We can also notice the presence of the control panel in front of us, a floating panel that provides us with some buttons to control the different parts of this ride. It contains four buttons:
+
+* Home
+* Play
+* Pause
+* Main Page
+
+
+When navigating through the different videos, we can resort to them to facilitate our visit, for example, in case we wanted to get back to the main page because we're done and want to contact SGI to join their lines, we have the SGI logo acting as a button that guides us to said main page.
+
+Albeit the control panel may look a little bit dry or lack of content, it can make the deal for sure!
+
+Last advice, the buttons are actioned using eventListeners along with mouseenter interactions, that means that the button is activated by just positioning the cursor onto said button.
+The cursor it's in the middle of the screen and makes a distinctive animation each time it touches a button.
+
+  ```js
+  addEventListener("mouseenter", function (){});
+  ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
