@@ -171,8 +171,6 @@ The cursor it's in the middle of the screen and makes a distinctive animation ea
 
 This is a quick example of a basic eventListener, where we await for an object with the quality "mouseenter" to collide with the button. In this case, the cursor lines a trace in front of it that has the "mouseenter" quality and triggers every button it collides with.
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 [Link Hosting](https://lndsabiosguias.web.app/)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
