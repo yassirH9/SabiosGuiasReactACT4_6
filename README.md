@@ -19,7 +19,22 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li>
+          <a href="#main-menu">Main Menu</a>
+          <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#discover-zone">Discover Zone</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#route-cards">route Cards</a></li>
+            <li><a href="#footer">Footer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -28,6 +43,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Web project made with JavaScript, React HTML and SASS, raised as a practice to make a main page of a web of tourist and cultural routes in the Canary Islands.
+
+Along with a 360 route map, with a VR lobby.
 
 ### Built With
 
@@ -50,6 +67,7 @@ To get a local copy up and running follow these simple example steps.
 
 follow the instructions below to use clone the project
 * GIT
+
   ```sh
   git clone https://github.com/yassirH9/SabiosGuiasReactACT4_6
   ```
@@ -59,17 +77,23 @@ follow the instructions below to use clone the project
 _Follow the instructions below to use this the project._
 
 1. Go to proyect folder
+
    ```sh
    cd SabiosGuiasReactACT4_6
    ```
+   
 2. Install NPM packages
+
    ```sh
    npm install
    ```
+   
 3. Open a local web service on 'localhost:3000'
+
    ```js
    npm start
    ```
+   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,5 +103,51 @@ _Follow the instructions below to use this the project._
 ## Usage
 
 This project is intended to be an example of react framework practice.
+
+<!--  -->
+### Main menu
+
+#### Header
+
+While being in the main menu of our webpage, we can see the header in the corporate color of the SGI, followed by their logo and a responsive menu that leads us to different pages. In case of using a mobile phone, said menu will collapse and convert into a burger menu that opens into an offcanvas, containing the same links as the desktop version.
+
+
+#### Slider
+
+Following the header we have a simple slider displaying some pictures that encourages the viewer to see more!
+
+
+#### Discover zone
+
+After the slider section we're presented to the "Sabios Guías" project, showing its interests and purposes, in combination to their vows in a three-column style that combines in such a way with the rest of the main page.
+
+
+#### Video
+
+Just in case the last section wasn't clear enough, there's an embedded video avaiable just a click away.
+
+
+#### Route Cards
+
+Having enough with the presentations, the route cards present a quick image and a little bit of information referring to each route along with a button that invites the user to see more, guiding them to the VR lobby mentioned earlier.
+
+#### Footer
+
+Last but not least we have the footer, containing a "Featured links" section with SGI's official social medias like: 
+
+* [YouTube](https://www.youtube.com/channel/UCsXpM6GoxhFjlGDTyEZ4q8A)
+* [Facebok](https://www.facebook.com/fundacionlidiagarcia/posts/sabios-gu%C3%ADas-interpretes-en-agaete-hoy-el-equipo-t%C3%A9cnico-del-proyecto-sabios-gu%C3%AD/877161022843884/)
+* [Twitter](https://twitter.com/FundacionLidia)
+
+And it even offers a RSS button in case you don't want to miss anything related to this page.
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+### VR
+
+Probably the section where most people will stay, in the VR page we've got a large lobby in which we have two main walls, one at each side showing a little preview of what we can find if we point directly at them.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
