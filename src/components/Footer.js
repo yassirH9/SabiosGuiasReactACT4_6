@@ -26,7 +26,7 @@ export default function Footer() {
               <a href="https://www.sabiosguiasinterpretes.com/"><img className="icon" src={wlogo}/><span class="label">Web Oficial</span></a>
             </dd>
             <dd>
-              <a href="https://www.sabiosguiasinterpretes.com/feed"><img className="icon" src={rsslogo}/><span class="label">RSS</span> </a>
+              <a type="application/rss+xml" href="/feed.rss"><img className="icon" src={rsslogo}/><span class="label">RSS</span> </a>
             </dd>
           </dl>
         </div>
